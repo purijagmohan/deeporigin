@@ -40,7 +40,7 @@ export const getUrl = async (req: Request, res: Response): Promise<void> => {
     if (!shortId || typeof shortId !== 'string') {
      res.status(400).json({ message: 'shortId query parameter is required' });
      return
-  }
+    }
 
     const url = await Url.findOne({ shortId });
     if (!url) {

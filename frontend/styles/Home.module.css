@@ -1,0 +1,96 @@
+/* Home.module.css */
+
+.container {
+  padding: 2rem;
+  max-width: 500px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.formCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.shortenButton {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.shortenButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.shortenButton:hover:not(:disabled) {
+  background-color: #4b44d6;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+.successSection {
+  margin-top: 2rem;
+}
+
+.successMessage {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.shortUrlRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shortUrl {
+  color: #6c63ff;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.copyButton {
+  padding: 0.5rem 1rem;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.copyButton:hover {
+  background-color: #c7c7c7;
+}
+
+.copySuccess {
+  color: green;
+  font-weight: bold;
+}
